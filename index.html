@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Postagem de Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="formulario">
+      <h1>Crie sua postagem</h1>
+      <form id="form-postagem">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" placeholder="Digite o título do post" required />
+
+        <label for="conteudo">Conteúdo</label>
+        <textarea id="conteudo" rows="6" placeholder="Digite o conteúdo do post" required></textarea>
+
+        <button type="submit" id="botao-publicar">Publicar</button>
+      </form>
+    </section>
+
+    <section class="post-renderizado">
+      <h2 id="renderizador-titulo"></h2>
+      <p id="renderizador-conteudo"></p>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
